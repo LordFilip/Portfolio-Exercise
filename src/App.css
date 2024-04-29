@@ -1,0 +1,79 @@
+.container {
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.item {
+  background-color: red;
+}
+.item-1 {
+  grid-row: span 2;
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.item-text {
+  padding: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-text h1 {
+  text-decoration: underline;
+}
+.item-text p {
+  margin: 16px 0px;
+}
+.item-text .btn {
+  background-color: transparent;
+  font-size: 16px;
+  padding: 4px;
+  width: 40%;
+}
+.item-text .btn:hover {
+  background-color: wheat;
+  transition: 0.24s;
+}
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(77, 183, 77, 0.9);
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.overlay button {
+  font-size: 40px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+.overlay .main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  height: 60vh;
+}
+.overlay .main h1 {
+  margin-bottom: 20px;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+.overlay .main p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
